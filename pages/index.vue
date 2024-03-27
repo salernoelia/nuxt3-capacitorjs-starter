@@ -1,10 +1,24 @@
 <template>
   <div>
-    <h1>Index</h1>
-    <h2>ifj</h2>
+    <h1>{{ rangeCount }}</h1>
+    <input
+      type="range"
+      name="range"
+      id="range"
+      v-model="range"
+      min="0"
+      max="100"
+      step="1"
+    />
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+import { useStorage } from "@vueuse/core";
+
+let range = ref<number>(0);
+
+const rangeCount = useStorage("range", range);
+</script>
 
 <style lang="scss" scoped></style>
