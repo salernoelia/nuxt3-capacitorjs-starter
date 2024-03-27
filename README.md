@@ -1,4 +1,5 @@
-# nuxt-capacitor-starter
+# Nuxt 3 w/ Capacitorjs Starter
+For Mobile Development
 
 ## Install the Capacitor CLI locally
 
