@@ -1,11 +1,10 @@
 <template>
   <div>
-    <NuxtPage />
+    <h1>Index</h1>
+    <h2>ifj</h2>
   </div>
 </template>
 
-<script setup>
-let hello = "Hello World";
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>
