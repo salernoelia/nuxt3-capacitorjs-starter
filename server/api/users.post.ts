@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
       ...body,
     };
     const result = db.insert(users).values(newUser).execute();
-    return { newUser: newUser };
+    return { newUser: newUser, result: result };
   } catch (e: any) {
     throw createError({
       statusCode: 400,
