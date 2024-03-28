@@ -32,6 +32,7 @@
     "@capacitor/keyboard": "5.0.8",
     "@capacitor/status-bar": "5.0.7",
     "better-sqlite3": "^9.4.3",
-    "drizzle-orm": "^0.29.5"
+    "drizzle-orm": "^0.29.5",
+    "sass": "^1.72.0"
   }
 }

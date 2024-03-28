@@ -3,8 +3,8 @@ import { db } from "../sqlite-service";
 
 export default defineEventHandler(async (event) => {
   try {
-    const result = await db.select().from(users).all();
-    return { users: result };
+    const usersResponse = await db.select().from(users).all();
+    return { users: usersResponse };
   } catch (e: any) {
     throw createError({
       statusCode: 400,
