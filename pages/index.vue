@@ -63,7 +63,7 @@ let range = ref<number>(0);
 let fetchedUser = ref<UserData | null>(null);
 
 watch(range, async (value) => {
-  const data = $fetch<UserData>("api/users/" + value);
+  const data = $fetch("api/users/" + value);
   fetchedUser.value = await data;
 });
 

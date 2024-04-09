@@ -11,7 +11,6 @@
     "start": "nuxt start"
   },
   "devDependencies": {
-    "@capacitor/cli": "5.7.3",
     "@nuxt/devtools": "latest",
     "@types/better-sqlite3": "^7.6.9",
     "@vue/cli-service": "5.0.8",
